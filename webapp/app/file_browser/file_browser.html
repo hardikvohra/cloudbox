@@ -1,0 +1,51 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<button 
+				type="button" 
+				class="btn btn-sm btn-primary" 
+				ng-disabled="!showBack"
+				ng-click="back()">
+				Back
+			</button>
+		</div>
+	</div>
+
+	<div class="row">
+		<h4 class="col-md-12">
+			{{currentDoc.name || currentFolder.name}}
+		</h4>
+	</div>
+
+	<div ng-show="showingDoc" class="row">
+		<div class="col-md-12 well clr-primary">
+			{{currentDoc.txt}}
+		</div>
+	</div>
+
+	<div ng-hide="showingDoc" class="well">
+		<div class="row">
+			<h4 class="col-md-7">
+				Name
+			</h4>
+			<h4 class="col-md-5">
+				Last Modified	
+			</h4>
+		</div>
+		<div 
+			class="row" 
+			ng-show="currentFolder.children.length === 0">
+			<div class="col-md-12">
+			This folder is empty
+			</div>	
+		</div>
+		<file
+			ng-repeat="f in currentFolder.children" 
+			on-click="f.onClick"
+			f-id="f.id"
+			f-name="f.name"
+			last-modified="f.lastModified"
+			is-document-file="f.isDoc">
+		</file>
+	</div>
+</div>

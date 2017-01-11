@@ -1,0 +1,15 @@
+<div>
+	<div class="row"> 
+		<hr>
+	</div>
+	<div class="row">
+		<div class="col-md-7" ng-click="onFClick()">
+			<img src="file_browser/image/folder.png" height="40" ng-hide="isDocumentFile">
+			<img src="file_browser/image/doc.png" height="40" ng-show="isDocumentFile">
+			{{fName}}
+		</div>
+		<div class="col-md-5">
+			{{lastModified}}
+		</div>
+	</div>
+</div>
