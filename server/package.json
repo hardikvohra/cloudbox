@@ -1,0 +1,20 @@
+{
+  "name": "cloud-box",
+  "version": "1.0.0",
+  "description": "cloud-box-server",
+  "main": "restify.js",
+  "author": {
+    "name": "Hardik Vohra",
+    "email": "vohra.hardik@gmail.com"
+  },
+  "dependencies": {
+    "restify": "^4.0.4",
+    "lodash": "~4.17.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
