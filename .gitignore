@@ -2,8 +2,8 @@ logs/*
 logs/*
 !.gitkeep
 */node_modules/
-*/bower_components/
+*/*/bower_components/
 tmp
 .DS_Store
 .idea
-web/package.sublime-workspace
+webapp/app/bower_components/
